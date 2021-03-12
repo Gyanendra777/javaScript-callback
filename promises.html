@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script>
+
+    // yh simple setTimeout mathade h
+
+
+    // var data="setTimeout output state";
+    // setTimeout(() => {
+    //   datae = "hello setTimeout ";
+    //   console.log(datae)
+    // }, 2000);
+    // console.log(data);
+
+   // yh simple setTimeout  mathade se phle promise lgate h  h
+
+    var data = new Promise(function (resolve,reject) {
+      setTimeout(() => {
+        resolve("promise statement done");
+        function name() {
+          console.log("hello function call ");
+        }
+        name();
+      }, 2000);
+    })
+    
+
+    data.then(function (va) {
+      // console.warn(va)
+      console.log(va)
+
+    })
+    
+    
+
+  </script>
+
+
+
+</head>
+<body>
+  
+</body>
+</html>
+
